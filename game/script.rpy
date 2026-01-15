@@ -1,33 +1,16 @@
-﻿# The script of the game goes in this file.
+﻿# Purpose: The Main Loop. It should act as a traffic controller, not the story itself.
 
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
-
-define e = Character("Eileen")
-
+# The script of the game goes in this file.
+# Declarations were moved to scripts/core_defiinitions
 
 # The game starts here.
 
 label start:
+    # 1. Setup (if needed)
+    $ current_chapter = 1
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
+    # 2. Start the (common) flow 
+    jump prologue_start
 
-    scene bg room
-
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
-
-    show eileen happy
-
-    # These display lines of dialogue.
-
-    e "You've created a new Ren'Py game."
-
-    e "Once you add a story, pictures, and music, you can release it to the world!"
-
-    # This ends the game.
-
+    # 3. Failsafe (Game should never reach here ideally)
     return
