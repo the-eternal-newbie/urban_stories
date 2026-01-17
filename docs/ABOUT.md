@@ -7,4 +7,5 @@ Checar la posibilidad de crear o cargar partidas
 
 ![IMG_7454](https://github.com/user-attachments/assets/7f7c102d-fde4-4021-b835-b4ebbede93ca)
 #Siguiente pantalla
+
 Cinemática pregrabada en pixel art donde se da contexto del mundo en que se desarrolla la historia
